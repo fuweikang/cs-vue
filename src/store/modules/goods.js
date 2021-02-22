@@ -45,7 +45,7 @@ const actions = {
     })
   },
   reqChangeList1(context) {
-    goodsList({size:99999,page:1}).then( res => {
+    goodsList().then( res => {
       let list = res.data.list?res.data.list:[]
       // context.commit("changeList",list)
       // if( list.length == 0 && context.state.page > 1 ) {
